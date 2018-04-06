@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="scotchApp">
+<head>
+    <meta charset="utf-8">
+    <title>Moja strona z navigacją w Angular</title>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="script.js"></script>
+</head>
+<body ng-controller="mainController">
+
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#">Start</a>
+                    </li>
+                    <li>
+                        <a href="#about">Wiecej o mnie</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Kontakt</a>
+                    </li>
+                    <li>
+                        <a href="#cv">CV</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main">
+        <div ng-view></div>
+    </div>
+
+    <div id="footer">
+        &copy; Damian Stępniak
+    </div>
+</body>
+</html>
+
+
+
+
